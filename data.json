@@ -1,0 +1,12 @@
+{
+  "songs": [
+    { "id": 1, "name": "Sayonara", "artist": "Wanko Ni Mero Mero", "preview": "sayonara.mp3" },
+    { "id": 2, "name": "Safe and Sound", "artist": "Capital Cities", "preview": "safeandsound.mp3" },
+    { "id": 3, "name": "Sugar", "artist": "Maroon 5", "preview": "sugar.mp3" }
+  ],
+  "scores": [
+    { "player": "Jazzy", "score": 4065 },
+    { "player": "Happy", "score": 4065 },
+    { "player": "Funky", "score": 4065 }
+  ]
+}
