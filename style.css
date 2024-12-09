@@ -1,0 +1,103 @@
+/* Reseta o estilo */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: #6200ea;
+  padding: 10px 0;
+}
+
+nav button {
+  background: #fff;
+  color: #6200ea;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+nav button:hover {
+  background: #ddd;
+}
+
+.menu {
+  display: none;
+  width: 80%;
+  max-width: 1200px;
+  background: #fff;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu.active {
+  display: block;
+}
+
+.scrollable {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.song, .score {
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background: #f9f9f9;
+  text-align: center;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.song:hover, .score:hover {
+  background: #e0e0e0;
+}
+
+#game-ui {
+  height: 300px;
+  background: linear-gradient(to bottom, #f4a261, #2a9d8f);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.dance-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-feedback {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.feedback {
+  padding: 10px 20px;
+  background: #fff;
+  color: #333;
+  border-radius: 20px;
+  font-size: 18px;
+}
