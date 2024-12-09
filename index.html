@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dance Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Navegação -->
+    <nav>
+      <button onclick="showMenu('music-menu')">🎵 Music</button>
+      <button onclick="showMenu('score-menu')">🏆 Scores</button>
+      <button onclick="showMenu('gameplay')">🕺 Gameplay</button>
+    </nav>
+
+    <!-- Menu de Músicas -->
+    <div id="music-menu" class="menu active">
+      <h1>Choose a Song</h1>
+      <div id="songs-container" class="scrollable"></div>
+    </div>
+
+    <!-- Menu de Pontuação -->
+    <div id="score-menu" class="menu">
+      <h1>Scores</h1>
+      <div id="score-container" class="scrollable"></div>
+    </div>
+
+    <!-- Gameplay -->
+    <div id="gameplay" class="menu">
+      <h1>Gameplay</h1>
+      <div id="game-ui">
+        <div class="dance-area">
+          <p>🎄 Holiday Theme</p>
+          <div class="player-feedback">
+            <div id="player1" class="feedback">Player 1: OK</div>
+            <div id="player2" class="feedback">Player 2: GOOD</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
